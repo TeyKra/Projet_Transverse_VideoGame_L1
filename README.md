@@ -1,4 +1,4 @@
-# Projet_Transverse_VideoGame_L1
+# Project_Transverse_VideoGame_L1
 
 ## Project Objective
 
