@@ -1,0 +1,26 @@
+        game.percent_B += game.percent_speed_B/200
+        print("percent_B =", round(game.percent_B, 2))
+        if (game.random_Time == round(game.percent_B, 2)):
+            print("Random_Time =", game.random_Time)
+            game.T1 = game.random_Time
+            print("T1 =", game.T1)
+            game.Bonus()
+            if(game.bonus == 1):
+                print("Bonus Vitesse", game.x)
+                while game.is_full_load_B() < 100:
+                    screen.blit(Bonus_Vitesse, (game.x, 570))
+                    #game.update_bar_B()
+                game.reset_percent_B()
+            elif(game.bonus == 2):
+                print("Bonus Force", game.x)
+                while game.is_full_load_B() < 100:
+                    screen.blit(Bonus_Force, (game.x, 570))
+                    #game.update_bar_B()
+                game.reset_percent_B()
+
+            elif(game.bonus == 3):
+                print("Bonus Vie", game.x)
+                while game.is_full_load_B() < 100:
+                    screen.blit(Bonus_Vie, (game.x, 570))
+                    #game.update_bar_B()
+                game.reset_percent_B()
